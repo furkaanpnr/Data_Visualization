@@ -1,0 +1,70 @@
+{
+    "games": {
+        "game1": {
+            "ballSize": 10,
+            "ballSpeed": 7,
+            "paddleSize": {
+                "red": 10,
+                "blue": 10,
+                "green": 10,
+                "white": 10
+            },
+            "paddleSpeed": {
+                "red": 5,
+                "blue": 5,
+                "green": 5,
+                "white": 5
+            },
+            "scores": {
+                "red": 23,
+                "blue": 17,
+                "green": 35,
+                "white": 25
+            }
+        },
+        "game2": {
+            "ballSize": 10,
+            "ballSpeed": 7,
+            "paddleSize": {
+                "red": 10,
+                "blue": 10,
+                "green": 10,
+                "white": 10
+            },
+            "paddleSpeed": {
+                "red": 5,
+                "blue": 5,
+                "green": 5,
+                "white": 5
+            },
+            "scores": {
+                "red": 15,
+                "blue": 17,
+                "green": 45,
+                "white": 23
+            }
+        },
+        "game3": {
+            "ballSize": 10,
+            "ballSpeed": 7,
+            "paddleSize": {
+                "red": 10,
+                "blue": 10,
+                "green": 10,
+                "white": 10
+            },
+            "paddleSpeed": {
+                "red": 5,
+                "blue": 5,
+                "green": 5,
+                "white": 5
+            },
+            "scores": {
+                "red": 23,
+                "blue": 25,
+                "green": 30,
+                "white": 22
+            }
+        }
+    }
+}
