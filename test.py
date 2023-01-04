@@ -43,5 +43,7 @@ whiteScores = [data["games"]["game"+str(i+1)]["scores"]["white"] for i in range(
 ### compare game1 scores with pie chart
 y = np.array(score1)
 plt.title("Game1 Results")
-plt.pie(y, labels=["RED", "BLUE", "GREEN", "WHITE"], colors=["red","blue","green","cyan"], autopct='%1.1f%%')
+labels = ["RED", "BLUE", "GREEN", "WHITE"]
+colors = ["red","blue","green","cyan"]
+plt.pie(y, labels=labels, colors=colors, autopct='%1.1f%%', shadow=True)
 plt.show()
