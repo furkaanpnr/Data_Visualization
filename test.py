@@ -22,14 +22,14 @@ greenScores = [data["games"]["game"+str(i+1)]["scores"]["green"] for i in range(
 whiteScores = [data["games"]["game"+str(i+1)]["scores"]["white"] for i in range(len(data))]
 
 ###compare for all games and all players
-plt.plot(redScores, label="red", color="red", marker="o", linestyle="dashed")
-plt.plot(blueScores, label="blue", color="blue", marker="o", linestyle="dashed")
-plt.plot(greenScores, label="green", color="green", marker="o", linestyle="dashed")
-plt.plot(whiteScores, label="white", color="black", marker="o", linestyle="dashed")
-plt.legend()
-plt.grid()
-plt.title("Scores for all games")
-plt.show()
+#plt.plot(redScores, label="red", color="red", marker="o", linestyle="dashed")
+#plt.plot(blueScores, label="blue", color="blue", marker="o", linestyle="dashed")
+#plt.plot(greenScores, label="green", color="green", marker="o", linestyle="dashed")
+#plt.plot(whiteScores, label="white", color="black", marker="o", linestyle="dashed")
+#plt.legend()
+#plt.grid()
+#plt.title("Scores for all games")
+#plt.show()
 
 ###compare game1 scores for all players
 #x = np.array(["RED", "BLUE", "GREEN", "WHITE"])
@@ -39,3 +39,9 @@ plt.show()
 #plt.title("Game1 Results")
 #plt.bar(x, y)
 #plt.show()
+
+### compare game1 scores with pie chart
+y = np.array(score1)
+plt.title("Game1 Results")
+plt.pie(y, labels=["RED", "BLUE", "GREEN", "WHITE"], autopct='%1.1f%%')
+plt.show()
