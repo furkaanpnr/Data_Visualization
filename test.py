@@ -45,5 +45,6 @@ y = np.array(score1)
 plt.title("Game1 Results")
 labels = ["RED", "BLUE", "GREEN", "WHITE"]
 colors = ["red","blue","green","cyan"]
-plt.pie(y, labels=labels, colors=colors, autopct='%1.1f%%', shadow=True)
+explode = (0, 0, 0.2, 0)# only "explode" the 3rd slice
+plt.pie(y, labels=labels, colors=colors, autopct='%1.1f%%', shadow=True, explode=explode)
 plt.show()
