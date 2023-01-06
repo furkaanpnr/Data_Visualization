@@ -89,19 +89,26 @@ whiteScores = [data["games"]["game"+ str(i+1)]["scores"]["white"] for i in range
 redScores = [data["games"]["game"+ str(i+1)]["scores"]["red"] for i in range(len(data))]
 greenScores = [data["games"]["game"+ str(i+1)]["scores"]["green"] for i in range(len(data))]
 blueScores = [data["games"]["game"+ str(i+1)]["scores"]["blue"] for i in range(len(data))]
+#
+#default_x_ticks = range(len(data)) # game number
+#
+#plt.plot(whiteScores, label="white", color="cyan", marker="o", linestyle="dashed")
+#plt.plot(redScores, label="red", color="red", marker="o", linestyle="dashed")
+#plt.plot(greenScores, label="green", color="green", marker="o", linestyle="dashed")
+#plt.plot(blueScores, label="blue", color="blue", marker="o", linestyle="dashed")
+#
+#plt.grid(linewidth=0.5, linestyle="--")
+#plt.xticks(default_x_ticks, [game+1 for game in range(len(data))])
+#plt.legend(title="AI Players", loc="best", bbox_to_anchor=(0.6, 0.1, 0.5, 1))
+#
+#plt.ylabel("Score")
+#plt.xlabel("Game Number")
+#plt.title("All Game Results")
+#plt.show()
 
-default_x_ticks = range(len(data)) # game number
-
-plt.plot(whiteScores, label="white", color="cyan", marker="o", linestyle="dashed")
-plt.plot(redScores, label="red", color="red", marker="o", linestyle="dashed")
-plt.plot(greenScores, label="green", color="green", marker="o", linestyle="dashed")
-plt.plot(blueScores, label="blue", color="blue", marker="o", linestyle="dashed")
-
-plt.grid(linewidth=0.5, linestyle="--")
-plt.xticks(default_x_ticks, [game+1 for game in range(len(data))])
-plt.legend(title="AI Players", loc="best", bbox_to_anchor=(0.6, 0.1, 0.5, 1))
-
-plt.ylabel("Score")
-plt.xlabel("Game Number")
-plt.title("All Game Results")
-plt.show()
+#ticks = range(len(data))
+##white
+#y = whiteScores
+#plt.xticks(ticks, [game+1 for game in range(len(data))])
+#plt.scatter(ticks, y, label="white", color="cyan", marker="o", s=100)
+#plt.show()
