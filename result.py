@@ -92,14 +92,58 @@ blueScores = [data["games"]["game"+ str(i+1)]["scores"]["blue"] for i in range(l
 
 default_x_ticks = range(len(data)) # game number
 
-plt.plot(whiteScores, label="white", color="cyan", marker="o", linestyle="dashed")
-plt.plot(redScores, label="red", color="red", marker="o", linestyle="dashed")
-plt.plot(greenScores, label="green", color="green", marker="o", linestyle="dashed")
-plt.plot(blueScores, label="blue", color="blue", marker="o", linestyle="dashed")
+#plt.plot(whiteScores, label="white", color="cyan", marker="o", linestyle="dashed")
+#plt.plot(redScores, label="red", color="red", marker="o", linestyle="dashed")
+#plt.plot(greenScores, label="green", color="green", marker="o", linestyle="dashed")
+#plt.plot(blueScores, label="blue", color="blue", marker="o", linestyle="dashed")
+#
+#plt.grid(linewidth=0.5, linestyle="--")
+#plt.xticks(default_x_ticks, [game+1 for game in range(len(data))])
+#plt.legend(title="AI Players", loc="best", bbox_to_anchor=(0.6, 0.1, 0.5, 1))
+#
+#plt.ylabel("Score")
+#plt.xlabel("Game Number")
+#plt.title("All Game Results")
+#plt.show()
 
+#> only white
+#plt.plot(whiteScores, label="white", color="cyan", marker="o", linestyle="dashed")
+#plt.grid(linewidth=0.5, linestyle="--")
+#plt.xticks(default_x_ticks, [game+1 for game in range(len(data))])
+#plt.legend(title="AI Players", loc="best", bbox_to_anchor=(0.6, 0.15, 0.5, 1))
+#
+#plt.ylabel("Score")
+#plt.xlabel("Game Number")
+#plt.title("All Game Results")
+#plt.show()
+
+#> only red
+#plt.plot(redScores, label="red", color="red", marker="o", linestyle="dashed")
+#plt.grid(linewidth=0.5, linestyle="--")
+#plt.xticks(default_x_ticks, [game+1 for game in range(len(data))])
+#plt.legend(title="AI Players", loc="best", bbox_to_anchor=(0.6, 0.15, 0.5, 1))
+#
+#plt.ylabel("Score")
+#plt.xlabel("Game Number")
+#plt.title("All Game Results")
+#plt.show()
+
+#> only green
+#plt.plot(greenScores, label="green", color="green", marker="o", linestyle="dashed")
+#plt.grid(linewidth=0.5, linestyle="--")
+#plt.xticks(default_x_ticks, [game+1 for game in range(len(data))])
+#plt.legend(title="AI Players", loc="best", bbox_to_anchor=(0.6, 0.15, 0.5, 1))
+#
+#plt.ylabel("Score")
+#plt.xlabel("Game Number")
+#plt.title("All Game Results")
+#plt.show()
+
+#> only blue
+plt.plot(blueScores, label="blue", color="blue", marker="o", linestyle="dashed")
 plt.grid(linewidth=0.5, linestyle="--")
 plt.xticks(default_x_ticks, [game+1 for game in range(len(data))])
-plt.legend(title="AI Players", loc="best", bbox_to_anchor=(0.6, 0.1, 0.5, 1))
+plt.legend(title="AI Players", loc="best", bbox_to_anchor=(0.6, 0.15, 0.5, 1))
 
 plt.ylabel("Score")
 plt.xlabel("Game Number")
