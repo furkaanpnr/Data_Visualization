@@ -22,12 +22,14 @@ greenScores = [data["games"]["game"+str(i+1)]["scores"]["green"] for i in range(
 whiteScores = [data["games"]["game"+str(i+1)]["scores"]["white"] for i in range(len(data))]
 
 ###compare for all games and all players
+#default_x_ticks = range(len(data))
 #plt.plot(redScores, label="red", color="red", marker="o", linestyle="dashed")
 #plt.plot(blueScores, label="blue", color="blue", marker="o", linestyle="dashed")
 #plt.plot(greenScores, label="green", color="green", marker="o", linestyle="dashed")
 #plt.plot(whiteScores, label="white", color="black", marker="o", linestyle="dashed")
+#plt.xticks(default_x_ticks, [game+1 for game in range(len(data))])
 #plt.legend()
-#plt.grid()
+#plt.grid(linewidth=0.5, linestyle="--")
 #plt.title("Scores for all games")
 #plt.show()
 
@@ -58,29 +60,29 @@ whiteScores = [data["games"]["game"+str(i+1)]["scores"]["white"] for i in range(
 #plt.scatter(x,y)
 #plt.show()
 
-### compare all AI scores
+### compare all AI
 #>> RED AI 
-x = [game+1 for game in range(len(data))]
-y = redScores
-plt.scatter(x, y, color="red")
-
-#>> BLUE AI
-x = [game+1 for game in range(len(data))]
-y = blueScores
-plt.scatter(x, y, color="blue")
-
-#>> GREEN AI
-x = [game+1 for game in range(len(data))]
-y = greenScores
-plt.scatter(x, y, color="green")
-
-#>> WHITE AI
-x = [game+1 for game in range(len(data))]
-y = whiteScores
-plt.scatter(x, y, color="cyan")
-
-plt.xlabel("GAMES")
-plt.ylabel("AI's SCORES")
-plt.title("RESULT OF ENTİRE GAME")
-#plt.colorbar()
-plt.show()
+#x = [game+1 for game in range(len(data))]
+#y = redScores
+#plt.scatter(x, y, color="red")
+#
+##>> BLUE AI
+#x = [game+1 for game in range(len(data))]
+#y = blueScores
+#plt.scatter(x, y, color="blue")
+#
+##>> GREEN AI
+#x = [game+1 for game in range(len(data))]
+#y = greenScores
+#plt.scatter(x, y, color="green")
+#
+##>> WHITE AI
+#x = [game+1 for game in range(len(data))]
+#y = whiteScores
+#plt.scatter(x, y, color="cyan")
+#
+#plt.xlabel("GAMES")
+#plt.ylabel("AI's SCORES")
+#plt.title("RESULT OF ENTİRE GAME")
+##plt.colorbar()
+#plt.show()
